@@ -32,15 +32,15 @@ strings=[]
 
 with open("/home/egor/Загрузки/rosalind_lcsm.txt","r") as f:
     f.readline()
-    curr=''
-    line=f.readline().strip()
-    while line!='':
-        if line[0]==">":
+    curr = ''
+    line = f.readline().strip()
+    while line != '':
+        if line[0] == ">":
             strings.append(curr)
-            curr=''
+            curr = ''
         else:
-            curr+=line
-        line=f.readline().strip()
+            curr += line
+        line = f.readline().strip()
 
 # function that returns all substring of length k
 
